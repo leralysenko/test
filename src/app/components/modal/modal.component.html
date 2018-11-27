@@ -1,0 +1,5 @@
+<ngx-smart-modal #myModal identifier="myModal">
+    <div *ngIf="myModal.hasData()">
+      <pre>{{ myModal.getData() | json }}</pre>
+    </div>
+</ngx-smart-modal>

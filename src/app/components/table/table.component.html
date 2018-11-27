@@ -1,0 +1,12 @@
+<app-modal></app-modal>
+<table>
+  <tr>
+    <th>title</th>
+    <th>url</th>
+    <th>created_at</th>
+    <th>author</th>
+  </tr>
+    <app-item *ngFor="let hit of hits" (click)="showDetails(hit)" [hit]="hit"></app-item>
+</table>
+
+
